@@ -1,0 +1,35 @@
+4.1.0 - Support AA(active-active) volume create/delete/attach/detach
+4.1.1 - Support AA volume snapshot create/delete.
+        Support AA volume clone, extend, create from snapshot.
+        Support AA volume manage, unmanage.
+        Support multiattach.
+4.1.2 - fix several bugs
+4.1.3 - Add option to control syncrate and check interval.
+        Stop localcopy when copy finished so that rc can be auto-delete.
+        Wait formatting before expand.
+4.1.4 - remove instorage_volume_name_template instorage_snapshot_name_template
+4.1.5 - support ssa pool,deduped volume
+4.2.0 - support inband management
+      - support RSA encryption
+4.2.1 - support extending a cloning volume
+      - support instorage_san_secondary_ip
+4.2.2 - support instorage_mcs_vol_nofmtdisk
+4.2.3 - support multi storage for inband management
+4.2.3.1 - support ROW
+        - support openstack X version
+4.2.3.2 - bugfix: revert snapshot
+4.2.3.3 - bugfix: attach volume
+4.2.3.4 - bugfix: return the link infomation corresponding to the node
+                  under the iogrp to which the volume can be accessed
+4.2.4 - support RDMA
+      - support manage_snapshot
+      - support ICOS private interface get_volumes_used_size
+4.2.5 - bugfix: bug_id:0044430
+4.2.6 - bugfix: build vm instance after volume migration for ICOS
+4.2.7 - bugfix: ignore null bytes error from MCS
+4.2.8 - bugfix: bug_id:0047491
+4.2.9 - support fast lcconsisgrp
+4.2.10 - support extend AA volume online
+       - support extend replication volume online
+       - support extend source volume in lcmap
+       - support attach volume using specific ip/wwpn
